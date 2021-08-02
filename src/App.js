@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-
+import './App.css'
 class App extends React.Component {
   state = {
     title: "",
@@ -29,6 +29,7 @@ class App extends React.Component {
       .then(() => {
         console.log("data sent to server");
         this.resetUserInputs();
+        this.getBlogPost();
       })
       .catch(() => {
         console.log("error");

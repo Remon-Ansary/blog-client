@@ -1,47 +1,28 @@
 import React from 'react'
 import "../App.css" ;
-import container from 'react-bootstrap/Container'
+
 
 class Navbar extends React.Component {
   render() {
     return (
        
         
-        <div classNameName="container d-flex align-items-center justify-content-between">
-    
-          <h1 className="logo"><a href="index.html">Blog<span>.</span></a></h1>
-    
-    
-          <nav id="navbar" className="navbar">
-            <ul>
-              <li><a classNameName="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a className="nav-link scrollto" href="#about">About</a></li>
-              <li><a className="nav-link scrollto" href="#services">Services</a></li>
-              <li><a className="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-              <li><a className="nav-link scrollto" href="#team">Team</a></li>
-              <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li className="dropdown"><a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a >Deep Drop Down 1</a></li>
-                      <li><a >Deep Drop Down 2</a></li>
-                      <li><a >Deep Drop Down 3</a></li>
-                      <li><a >Deep Drop Down 4</a></li>
-                      <li><a >Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
+        <nav className="navbar navbar-expand-lg bg-secondary text-uppercase " id="mainNav">
+        <div className="container">
+            <a className="navbar-brand" href="#page-top">Remons Blog</a>
+            <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i className="fas fa-bars"></i>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                 </ul>
-              </li>
-              <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-            </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-    
-    </div>
+            </div>
+        </div>
+    </nav>
 
      
     )
